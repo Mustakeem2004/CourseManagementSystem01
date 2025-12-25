@@ -130,6 +130,7 @@ const allowedOrigins = [
   'https://course-management-system01-b7af.vercel.app',
   'https://coursemanagementsystem01-1.onrender.com',
   'https://edunexus-git-main-deepennehra-projects.vercel.app',
+   'https://edunexus01.onrender.com',
   process.env.CLIENT_URL,
 ].filter(Boolean);
 
