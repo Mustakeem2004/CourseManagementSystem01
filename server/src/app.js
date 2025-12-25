@@ -24,8 +24,8 @@ const corsOptions = {
     'https://coursemanagementsystem01.onrender.com',
     'http://localhost:3000', // Alternative local port
     'https://edunexus-git-main-deepennehra-projects.vercel.app', // Your Vercel deployment
-    'https://*.vercel.app', // All Vercel subdomains
-    'https://*.onrender.com', // All Vercel subdomains
+    // 'https://*.vercel.app', // All Vercel subdomains
+    // 'https://*.onrender.com', // All Vercel subdomains
 
     process.env.CLIENT_URL // Environment variable for production
   ].filter(Boolean), // Remove undefined values
@@ -33,6 +33,35 @@ const corsOptions = {
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
 };
+
+
+// const allowedOrigins = [
+//   'http://localhost:5173',
+//   'http://localhost:3000',
+//   'https://edunexus01.onrender.com',
+//   'https://coursemanagementsystem01.onrender.com',
+//   'https://coursemanagementsystem01-1.onrender.com',
+//   'https://edunexus-git-main-deepennehra-projects.vercel.app',
+//   process.env.CLIENT_URL
+// ].filter(Boolean);
+
+// const corsOptions = {
+//   origin: function (origin, callback) {
+//     // Allow requests with no origin (Postman, curl)
+//     if (!origin) return callback(null, true);
+
+//     if (allowedOrigins.includes(origin)) {
+//       callback(null, true);
+//     } else {
+//       callback(new Error('Not allowed by CORS'));
+//     }
+//   },
+//   credentials: true,
+//   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+//   allowedHeaders: ['Content-Type', 'Authorization'],
+// };
+
+
 
 app.use(cors(corsOptions));
 app.use(express.json({ limit: '10mb' }));
