@@ -20,6 +20,7 @@ const app = express();
 const corsOptions = {
   origin: [
     'http://localhost:5173', // Local development
+    'https://edunexus01.onrender.com',
     'https://coursemanagementsystem01.onrender.com',
     'http://localhost:3000', // Alternative local port
     'https://edunexus-git-main-deepennehra-projects.vercel.app', // Your Vercel deployment
