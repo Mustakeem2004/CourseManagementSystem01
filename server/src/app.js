@@ -127,6 +127,7 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
+  'https://course-management-system01-b7af.vercel.app',
   'https://coursemanagementsystem01-1.onrender.com',
   'https://edunexus-git-main-deepennehra-projects.vercel.app',
   process.env.CLIENT_URL,
