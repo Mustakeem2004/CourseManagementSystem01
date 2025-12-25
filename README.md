@@ -197,8 +197,8 @@ Before you begin, ensure you have the following installed:
 
 4. **Access the application**
    - Frontend: http://localhost:5173
-   - Backend API: http://localhost:8000
-   - API Health Check: http://localhost:8000/api/health
+   - Backend API: https://coursemanagementsystem01.onrender.com
+   - API Health Check: https://coursemanagementsystem01.onrender.com/api/health
 
 ### ⚙️ Detailed Configuration
 
@@ -228,7 +228,7 @@ CLOUDINARY_API_SECRET=your-api-secret
 # Google OAuth (Optional)
 GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
-GOOGLE_CALLBACK_URL=http://localhost:8000/api/auth/google/callback
+GOOGLE_CALLBACK_URL=https://coursemanagementsystem01.onrender.com/api/auth/google/callback
 CLIENT_URL=http://localhost:5173
 ```
 
@@ -238,7 +238,7 @@ Create `client/.env` file:
 
 ```env
 # API Configuration
-VITE_API_URL=http://localhost:8000/api
+VITE_API_URL=https://coursemanagementsystem01.onrender.com/api
 ```
 
 ### 🗄️ Database Setup Options
@@ -272,7 +272,7 @@ VITE_API_URL=http://localhost:8000/api
 1. **Check Backend**
 
    ```bash
-   curl http://localhost:8000/api/health
+   curl https://coursemanagementsystem01.onrender.com/api/health
    # Should return: {"status":"OK","message":"Server is running"}
    ```
 

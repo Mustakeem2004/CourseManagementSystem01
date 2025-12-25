@@ -37,7 +37,7 @@ export default function Login() {
   const handleGoogleLogin = () => {
     setOauthError(null)
     // Redirect to Google OAuth
-    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000/api'
+    const apiUrl = import.meta.env.VITE_API_URL || 'https://coursemanagementsystem01.onrender.com/api'
     window.location.href = `${apiUrl}/auth/google`
   }
 

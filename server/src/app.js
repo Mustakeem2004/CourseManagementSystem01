@@ -25,6 +25,7 @@ const corsOptions = {
     'http://localhost:3000', // Alternative local port
     'https://edunexus-git-main-deepennehra-projects.vercel.app', // Your Vercel deployment
     'https://*.vercel.app', // All Vercel subdomains
+    'https://*.onrender.com', // All Vercel subdomains
 
     process.env.CLIENT_URL // Environment variable for production
   ].filter(Boolean), // Remove undefined values

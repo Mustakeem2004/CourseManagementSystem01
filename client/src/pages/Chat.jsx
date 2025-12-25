@@ -18,7 +18,7 @@ export default function Chat() {
     api.get(`/courses/${id}/chat`).then(({ data }) => setMessages(data.messages || []))
 
     // Setup socket
-    const baseURL = import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:8000'
+    const baseURL = import.meta.env.VITE_API_URL?.replace('/api', '') || 'https://coursemanagementsystem01.onrender.com'
     socketRef.current = io(baseURL, {
       auth: { token }
     })
