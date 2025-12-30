@@ -38,7 +38,7 @@ const Navigation = () => {
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
               <FaGraduationCap className="h-8 w-8 text-indigo-600" />
-              <span className="ml-2 text-xl font-bold text-gray-900">EduNexus</span>
+              <span className="ml-2 text-xl font-bold text-gray-900">LMS</span>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <Link
@@ -146,7 +146,7 @@ const MainLayout = ({ children }) => (
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-xl">E</span>
               </div>
-              <span className="text-2xl font-bold">EduNexus</span>
+              <span className="text-2xl font-bold">LMS</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               Empowering learners worldwide with cutting-edge online education.
@@ -185,7 +185,7 @@ const MainLayout = ({ children }) => (
             <ul className="space-y-3 text-gray-400">
               <li><Link to="/courses" className="hover:text-blue-400 transition-colors">Browse Courses</Link></li>
               <li><Link to="/signup" className="hover:text-blue-400 transition-colors">Become a Student</Link></li>
-              <li><Link to="/signup" className="hover:text-blue-400 transition-colors">Teach on EduNexus</Link></li>
+              <li><Link to="/signup" className="hover:text-blue-400 transition-colors">Teach on LMS</Link></li>
             </ul>
           </div>
 
@@ -213,7 +213,7 @@ const MainLayout = ({ children }) => (
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} EduNexus. All rights reserved.
+            © {new Date().getFullYear()} LMS. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-gray-400">
             <a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a>
@@ -263,7 +263,7 @@ const Home = () => {
       {/* Features Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-          Why Choose EduNexus?
+          Why Choose LMS?
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition">

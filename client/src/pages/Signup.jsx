@@ -72,7 +72,7 @@ export default function Signup() {
               <span className="text-white font-bold text-2xl">E</span>
             </div>
             <span className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              EduNexus
+              LMS
             </span>
           </Link>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">Create Account</h2>
@@ -297,7 +297,7 @@ export default function Signup() {
       {/* Footer */}
       <footer className="bg-gray-900 text-gray-400 py-8 mt-auto">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <p className="text-sm">© {new Date().getFullYear()} EduNexus. All rights reserved.</p>
+          <p className="text-sm">© {new Date().getFullYear()} LMS. All rights reserved.</p>
         </div>
       </footer>
     </div>
